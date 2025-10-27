@@ -103,11 +103,6 @@ class CounterApp {
 }
 
 // Initialize the app when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-  new CounterApp();
-});
-
-// Initialize immediately if DOM is already loaded
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     new CounterApp();
